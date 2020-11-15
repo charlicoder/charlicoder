@@ -1,13 +1,29 @@
 
-<!doctype html>
-<html lang="en-us">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Charlicoder Resume</title>
-</head>
-<body>
-    <h1>Charlicoder Resume</h1>
-</body>
-</html>
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %} Resume {% endblock %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}
+<link href="{% static 'css/resume.css' %}" rel="stylesheet" type='text/css'>
+{% endblock stylesheets %}
+
+
+{% block content %}
+    <div class="container p-5">
+        <header class="header">
+	    
+            <div class="header-intro header-intro-resume theme-bg-primary text-white py-5">
+                <div class="container position-relative">
+                    <h2 class="page-heading mb-3">Resume</h2>
+                    <a class="btn theme-btn-on-bg download-resume position-absolute font-weight-bold mx-auto" 
+                    href="" target="_blank">
+                    <i class="fas fa-download mr-2"></i>Download PDF Version</a>
+                </div><!--//container-->
+            </div><!--//header-intro-->
+            
+        </header><!--//header-->
+        {% include 'piller-profile.html' %}
+    </div>
+{% endblock content %}
