@@ -1,12 +1,4 @@
-/**======================================================================
-=========================================================================
-Template Name: Gradient able Bootstrap Admin Template
-Author: Phoenixcoded
-Support: support@phoenixcoded.net
-File: style.css
-=========================================================================
-=================================================================================== */
-/* devanagari */
+
 @import url(plugins/animate.min.css);
 
 @font-face {
@@ -22674,8 +22666,9 @@ pre[class*=language-]:before {
 }
 
 .pcoded-header.header-blue {
-    background: -webkit-gradient(linear, left top, right top, from(#4099ff), to(#73b4ff));
-    background: linear-gradient(to right, #4099ff, #73b4ff);
+    /* background: -webkit-gradient(linear, left top, right top, from(#4099ff), to(#73b4ff));
+    background: linear-gradient(to right, #4099ff, #73b4ff); */
+    background-color: #434E5E;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -26282,11 +26275,7 @@ div.dtk-focus-alt table.dataTable tbody th.focus {
     overflow: hidden;
     min-width: 100%;
     min-height: 100vh;
-    /* background: linear-gradient(45deg, #4099ff, #82bcff); */
-    background-image: url("../images/auth/loginbg-1.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    background: linear-gradient(45deg, #4099ff, #82bcff);
 }
 
 @media (min-width: 1200px) {
@@ -26479,7 +26468,7 @@ div.dtk-focus-alt table.dataTable tbody th.focus {
 
 /* image varient start */
 .aut-bg-img {
-    background-image: url("../images/auth/login_bg_1.jpg");
+    background-image: url("../images/auth/img-auth-big.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;

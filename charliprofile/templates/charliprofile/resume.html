@@ -1,12 +1,28 @@
-<!doctype html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Page Title</title>
-</head>
-<body>
-  <h1>Freelancer's Resume page! </h1>
-</body>
-</html>
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %} Resume {% endblock %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}
+<link href="{% static 'css/resume.css' %}" rel="stylesheet" type='text/css'>
+{% endblock stylesheets %}
+
+{% block sidebar %}{% endblock sidebar %}
+
+{% block content %}
+    <div class="container p-5">
+        <header class="header resume-wrapper-inner mx-auto">
+
+            <div class="header-intro header-intro-resume theme-bg-primary text-white py-5 mr-auto">
+                <div class="container position-relative">
+                    <a class="btn theme-btn-on-bg download-resume position-absolute font-weight-bold mx-auto"
+                    href="" target="_blank">
+                    <i class="fas fa-download mr-2"></i>Download PDF Version</a>
+                </div><!--//container-->
+            </div><!--//header-intro-->
+
+        </header><!--//header-->
+        {% include 'charliprofile/piller-resume.html' %}
+    </div>
+{% endblock content %}

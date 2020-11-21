@@ -13,11 +13,11 @@ class HomeView(TemplateView):
     template_name = 'charli-resume.html'
 
 
-# def get(self, request):
-#     if self.request.user.is_authenticated:
-#         return render(request, 'charliprofile/resume.html')
-#     else:
-#         return render(request, 'charli-resume.html')
+def home(request):
+    if request.user.is_authenticated:
+        return render(request, 'index.html')
+    else:
+        return render(request, 'charliprofile/resume.html')
 
 
 @method_decorator(login_required, name='dispatch')
