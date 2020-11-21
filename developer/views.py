@@ -17,7 +17,7 @@ def home(request):
     if request.user.is_authenticated:
         return render(request, 'index.html')
     else:
-        return render(request, 'charliprofile/resume.html')
+        return render(request, 'developer/resume.html')
 
 
 @method_decorator(login_required, name='dispatch')

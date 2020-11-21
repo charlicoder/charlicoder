@@ -1,6 +1,6 @@
 from django.urls import path
 
-from charliprofile.views import HomeView, ResumeView, CharliResumeView, home
+from developer.views import HomeView, ResumeView, CharliResumeView, home
 
 urlpatterns = [
     path('', home, name="home"),
