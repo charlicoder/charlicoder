@@ -19,14 +19,15 @@
 						  <a class="nav-link active" href="#">CONTACT ME</a>
 						  <a class="nav-link" href="#">BLOGS</a>
 						  <a class="nav-link" href="#">RESUME</a>
+							{% if not request.user.is_authenticated %}
+
+								<a class="nav-link" href="/login/">{{ "login"| upper }}</a>
 						</nav>
+							{% else  %}
+
             <ul class="navbar-nav">
 
-								{% if notrequest.user.is_authenticated %}
-								<li class="nav-item">
-									<a href="/login/">login</a>
-								</li>
-								{% else %}
+
                 <li>
                     <div class="dropdown drp-user">
                         <a href="#!" class="dropdown-toggle" data-toggle="dropdown">
@@ -54,8 +55,9 @@
                         </div>
                     </div>
                 </li>
-								{% endif %}
-            </ul>
+								</ul>
+							{% endif %}
+
         </div>
 
 
