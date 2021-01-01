@@ -1,21 +1,16 @@
-# import environ
 from pathlib import Path
+from decouple import config
 
-# env = environ.Env.read_env()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_DIR = Path(__file__).parent
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
-# import pdb; pdb.debug()
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'S#perS3crEt_1122'
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+SECRET_KEY = config('SECRET_KEY')
 
-ALLOWED_HOSTS = ['*']
-# ALLOWED_HOSTS = ['localhost', '127.0.0.1', env('SERVER', default='127.0.0.1')]
+DEBUG = config('DEBUG', cast=bool)
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', config('SERVER', default='127.0.0.1')]
 
 
 # Application definition
@@ -44,8 +39,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'core.urls'
-LOGIN_REDIRECT_URL = "home"   # Route defined in app/urls.py
-LOGOUT_REDIRECT_URL = "home"  # Route defined in app/urls.py
+# LOGIN_REDIRECT_URL = "home"   # Route defined in app/urls.py
+# LOGOUT_REDIRECT_URL = "home"  # Route defined in app/urls.py
 
 LOGIN_URL = 'login'
 
