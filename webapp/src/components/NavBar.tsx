@@ -2,11 +2,10 @@ import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+
 import {
     AiFillStar,
     AiOutlineHome,
@@ -14,9 +13,10 @@ import {
     AiOutlineUser,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import Logo from "./Logo";
 
 const NavBar: React.FC = () => {
-    const [expand, updateExpanded] = useState<boolean | "expanded">(false);
+    const [expand, updateExpanded] = useState<boolean>(false);
     const [navColour, updateNavbar] = useState<boolean>(false);
 
     const scrollHandler = () => {
@@ -45,12 +45,12 @@ const NavBar: React.FC = () => {
         >
             <Container>
                 <Navbar.Brand href="/" className="d-flex">
-                    <img src={logo} className="img-fluid logo" alt="brand" />
+                    <Logo />
                 </Navbar.Brand>
                 <Navbar.Toggle
                     aria-controls="responsive-navbar-nav"
                     onClick={() => {
-                        updateExpanded(expand ? false : "expanded");
+                        updateExpanded(expand ? false : true);
                     }}
                 >
                     <span></span>

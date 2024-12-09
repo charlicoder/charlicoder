@@ -1,25 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import pdf from "../../assets/Simple_Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
-import { StyleSheet } from '@react-pdf/renderer';
 
-const styles = StyleSheet.create({
-    page: {
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '8.5in',   // Letter width
-        height: '11in',   // Letter height
-    },
-    text: {
-        margin: 12,
-        fontSize: 14,
-        textAlign: 'center',
-    },
-});
 
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import Particle from "../../components/Particle";
@@ -100,8 +85,7 @@ const ResumeNew: React.FC = () => {
                         <div key={`page_${pageNumber}`} style={{ marginBottom: '20px' }}>
                             <Page
                                 pageNumber={pageNumber}
-                                size="LETTER"
-                                style={styles.page}
+
                             />
                         </div>
                     </Document>

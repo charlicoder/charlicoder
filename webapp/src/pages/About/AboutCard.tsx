@@ -10,7 +10,9 @@ function AboutCard() {
                         Hi Everyone, I am <span className="purple">Khondoker Md Mamunur Rashid </span>
                         from <span className="purple"> Sylhet, Bangladesh.</span>
                         <br />
-                        I am currently employed as a software developer.
+                        <br />
+                        I am available to hire as a Freelance Web Application developer or Data Engineer.
+                        <br />
                         <br />
                         I have completed Integrated BSc in Physics from National University of Bangladesh
                         <br />

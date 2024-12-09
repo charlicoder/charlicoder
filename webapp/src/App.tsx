@@ -35,7 +35,7 @@ const App: React.FC = () => {
             <div className="App" id={load ? "no-scroll" : "scroll"}>
                 <NavBar />
                 <ScrollToTop />
-                <main className="">
+                <main className="min-h-svh">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />

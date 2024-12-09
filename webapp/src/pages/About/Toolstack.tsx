@@ -3,9 +3,9 @@ import { VscVscode } from "react-icons/vsc";
 import {
     SiPostman,
     SiSlack,
-    SiVercel,
-    SiMacos,
+    SiMacos
 } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 
 function Toolstack() {
     return (
@@ -14,7 +14,7 @@ function Toolstack() {
                 <SiMacos />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <VscVscode />
+                <FaAws />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <SiPostman />
@@ -23,7 +23,7 @@ function Toolstack() {
                 <SiSlack />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <SiVercel />
+                <VscVscode />
             </Col>
         </Row>
     );
