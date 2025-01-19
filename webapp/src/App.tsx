@@ -14,7 +14,7 @@ import Pre from "./components/Pre";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import About from "./pages/About";
-import ResumeNew from "./pages/Resume";
+import ResumeNew from "./pages/Resume/index";
 import Chatbot from './pages/Chatbot'
 
 const App: React.FC = () => {

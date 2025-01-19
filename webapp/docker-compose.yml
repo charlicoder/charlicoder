@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  charliapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80" # Map port 80 of the container to port 5173 on the host
+    volumes:
+      - ./nginx.default:/etc/nginx/conf.d/default.conf:ro # Mount Nginx config as read-only
+    environment:
+      NODE_ENV: production
+    restart: unless-stopped

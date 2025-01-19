@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import homeLogo from "../../assets/home-main.svg";
 
 import Type from "./Type";
 import Particle from "../../components/Particle";
