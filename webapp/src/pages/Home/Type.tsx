@@ -8,7 +8,7 @@ function Type() {
           "Full Stack Python Developer",
           "Freelancer",
           "Data Engineer",
-          "Prompt Engineer",
+          "GenAI & Prompt Engineer",
         ],
         autoStart: true,
         loop: true,
