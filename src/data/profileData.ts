@@ -6,7 +6,7 @@ export const profileData = {
   email: "charlicoder@gmail.com",
   secondaryEmail: "contact@charlicoder.com",
   phone: "+97433665851",
-  imgUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&h=500",
+  imgUrl: "https://charlicoder.s3.us-east-1.amazonaws.com/media/mamun.jpg?auto=format&fit=crop&w=500&h=500",
   available: true,
   bio: "Versatile Senior Software Engineer with extensive experience in full-stack development, data engineering, and cloud infrastructure. My expertise spans:\n\nBackend Development: Expert in Python (Django, DRF, FastAPI, Celery, Streamlit) and Node.js (Express) with strong focus on microservices, event-driven architecture, and RESTful APIs.\n\nFrontend Development: Proficient in React, HTML5, CSS3, JavaScript, TailwindCSS, and Material Design for creating responsive user interfaces.\n\nData Engineering: Advanced skills in database systems (PostgreSQL, MongoDB, Snowflake) and vector databases (Qdrant, ChromaDB, Pinecone, FAISS), with strong ETL pipeline automation using NumPy, Pandas, and Polars.\n\nMachine Learning: Specialized in semantic search, classification, and AI chatbots leveraging LLMs through frameworks like LangChain, LangGraph, CrewAI, and HuggingFace.\n\nDevOps & Cloud: Proficient with AWS services (EC2, Lambda, SQS, S3, Fargate, ECS, RDS), Docker, Kubernetes, and CI/CD pipelines for robust deployment architectures.\n\nThrough my career, I've delivered scalable web applications, implemented ML solutions for real-world problems, automated complex data workflows, and designed effective microservice architectures. I emphasize test-driven development and foster team collaboration through effective communication and agile methodologies.",
 };
@@ -195,13 +195,13 @@ export const recommendations = [
     name: "Ron Dyck",
     position: "CTO, Entrepreneur, Savvie International Corp",
     text: "Mamunur Rashid was a great asset to our team. When thrown some very challenging problems, I found him to be very resourceful and hard working. I would highly recommend him.",
-    imgUrl: "https://randomuser.me/api/portraits/men/42.jpg",
+    imgUrl: "https://media.licdn.com/dms/image/v2/C5603AQFUZj4SDa7yJQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517737055280?e=1749081600&v=beta&t=nuNYcjZ4I_ywbxzCWpY0Whx2FyU0ndMDENPVrhkN8h0",
   },
   {
     name: "Iraj Islam",
     position: "Co-founder and CTO of NewsCred.com",
     text: "Mamunur Rashid is an intelligent, hard working and driven software engineer. During his time at NewsCred he was both a Software Engineer and a SQA Engineer. He contributed to feature development of various products and also made sure quality was maintained. We are grateful for his time at NewsCred and wish him a bright future as a successful Software Engineer.",
-    imgUrl: "https://randomuser.me/api/portraits/men/27.jpg",
+    imgUrl: "https://media.licdn.com/dms/image/v2/C4E03AQHtr9IAbOnxUA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517688229532?e=1749081600&v=beta&t=v7ha9p-LFuVhV2UVHDZ6ts-kBgXt-EYlJIahKfgKjFE",
   },
 ];
 
@@ -210,27 +210,27 @@ export const companies = [
   {
     name: "NewsCred",
     url: "https://www.newscred.com",
-    imgUrl: "https://randomuser.me/api/portraits/lego/1.jpg",
+    imgUrl: "https://media.licdn.com/dms/image/v2/C4D0BAQEjxR3UfcDfzg/company-logo_200_200/company-logo_200_200/0/1630540599440/newscred_logo?e=1749081600&v=beta&t=U_ThEvHg1K4WEd6_pjqLAPVKWS-9Md0mXZO0PblQZDw",
   },
   {
     name: "Cloud Custom Solutions",
     url: "https://cloudcustomsolutions.com",
-    imgUrl: "https://randomuser.me/api/portraits/lego/2.jpg",
+    imgUrl: "https://media.licdn.com/dms/image/v2/C560BAQF_k6pduUeALQ/company-logo_200_200/company-logo_200_200/0/1630621189821/cloud_custom_solutions_logo?e=1749081600&v=beta&t=BByLPFCcBSXHc19iHCzu7CrDTIhhR_zMk5C9wGf4vbg",
   },
   {
     name: "Savvie",
     url: "https://savvie.app",
-    imgUrl: "https://randomuser.me/api/portraits/lego/3.jpg",
+    imgUrl: "https://media.licdn.com/dms/image/v2/C560BAQEqNHoBS4waZA/company-logo_200_200/company-logo_200_200/0/1676653832189/savvieapp_logo?e=1749081600&v=beta&t=gTpNGOQTVgqoan7CnTizEZ4ZJU_jT32WylTXD3516s8",
   },
   {
     name: "EkkBaz",
     url: "https://ekkbaz.com",
-    imgUrl: "https://randomuser.me/api/portraits/lego/4.jpg",
+    imgUrl: "https://media.licdn.com/dms/image/v2/C560BAQExVwDLJIjW3A/company-logo_200_200/company-logo_200_200/0/1631352717771?e=1749081600&v=beta&t=htyXOkiehQVrPsMKV9RCuAJlaS-Zs9Ycy7UHd92oXcs",
   },
   {
     name: "W3Engineers",
     url: "https://w3engineers.com",
-    imgUrl: "https://randomuser.me/api/portraits/lego/5.jpg",
+    imgUrl: "https://media.licdn.com/dms/image/v2/C560BAQFncp-TyZ2AwQ/company-logo_200_200/company-logo_200_200/0/1674024802826/w3engineers_logo?e=1749081600&v=beta&t=7gqsjrqj5nRXaLRxHTCJF4OMumYd72yaKP7EivkhVA4",
   },
   {
     name: "SCOM.ca",
@@ -240,6 +240,11 @@ export const companies = [
   {
     name: "Publiseek",
     url: "https://publiseek.com",
-    imgUrl: "https://randomuser.me/api/portraits/lego/7.jpg",
+    imgUrl: "https://media.licdn.com/dms/image/v2/C4E0BAQGRw82R_f1JGA/company-logo_200_200/company-logo_200_200/0/1656607060347/superscoutco_logo?e=1749081600&v=beta&t=79A5GSeojP2axsS7-5mMIE0UwTU_-RWdLCsBhNR3Sao",
+  },
+  {
+    name: "Kazi IT",
+    url: "https://www.linkedin.com/company/kitcbangladesh/",
+    imgUrl: "https://media.licdn.com/dms/image/v2/C510BAQH2bHXWSe34VA/company-logo_200_200/company-logo_200_200/0/1630581354843/kitcbangladesh_logo?e=1749081600&v=beta&t=kwp8uOdtVvY9Sgedcjh6ni4BjHxiwxkuqkLLPfM8D3g",
   },
 ];
