@@ -8,7 +8,6 @@ import { User, FileText, Briefcase, Newspaper, Wand, Mail } from "lucide-react";
 const navItems = [
   { href: "/", label: "About Me", icon: <User size={16} /> },
   { href: "/resume", label: "Resume", icon: <FileText size={16} /> },
-  { href: "/jobs", label: "Jobs", icon: <Briefcase size={16} /> },
   { href: "/technews", label: "Tech News", icon: <Newspaper size={16} /> },
   { href: "/services", label: "My Services", icon: <Briefcase size={16} /> },
   { href: "/tools", label: "Free Tools", icon: <Wand size={16} /> },
@@ -22,9 +21,9 @@ const MainNav = () => {
     <NavigationMenu className="max-w-full w-full justify-start">
       <NavigationMenuList className="flex flex-row space-x-2">
         {navItems.map((item) => {
-          const isActive = location.pathname === item.href || 
+          const isActive = location.pathname === item.href ||
             (item.href === "/" && location.pathname === "/about");
-          
+
           return (
             <NavigationMenuItem key={item.href}>
               <Link
