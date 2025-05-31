@@ -17,7 +17,7 @@ const MainNav = () => {
     const location = useLocation();
 
     return (
-        <NavigationMenu className="max-w-full w-full justify-start">
+        <NavigationMenu className="max-w-full w-full justify-center">
             <NavigationMenuList className="flex flex-row space-x-2">
                 {navItems.map((item) => {
                     const isActive = location.pathname === item.href ||
