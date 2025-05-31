@@ -2,7 +2,7 @@
 // Profile data
 export const profileData = {
   name: "Khondoker Md Mamunur Rashid",
-  title: "Sr. Software Engineer | Full Stack Developer | Generative AI & AI Automation Engineer | Blockchain Developer",
+  title: "Full Stack Developer | Generative AI & AI Automation Engineer | Blockchain Developer",
   location: "Doha, Qatar",
   email: "charlicoder@gmail.com",
   secondaryEmail: "contact@charlicoder.com",
