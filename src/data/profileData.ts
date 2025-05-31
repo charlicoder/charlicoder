@@ -1,14 +1,15 @@
+
 // Profile data
 export const profileData = {
   name: "Khondoker Md Mamunur Rashid",
-  title: "Senior Software Engineer & AI Solutions Architect",
+  title: "Sr. Software Engineer | Full Stack Developer | Generative AI & AI Automation Engineer | Blockchain Developer",
   location: "Doha, Qatar",
   email: "charlicoder@gmail.com",
   secondaryEmail: "contact@charlicoder.com",
   phone: "+97433665851",
   imgUrl: "https://charlicoder.s3.us-east-1.amazonaws.com/media/mamun.jpg?auto=format&fit=crop&w=500&h=500",
   available: true,
-  bio: "Results-driven Python Developer with 14 years of hands-on experience in architecting, developing, and deploying scalable full-stack web applications, data pipelines, and AI-powered solutions. Demonstrated expertise across backend and frontend development, cloud infrastructure, and data engineering, with a strong track record of integrating machine learning models into real-world production environments. Passionate about leveraging emerging technologies to deliver impactful, high-performance, and maintainable systems.\n\nCore Competencies\n\nBackend Development: Expert in Python (Django, DRF, FastAPI, Celery, Streamlit) and Node.js (Express). Skilled in RESTful APIs, microservices, event-driven systems, and message brokers (RabbitMQ).\n\nFrontend Development: Proficient in HTML5, CSS3, JavaScript, TailwindCSS, Material Design, and React for building responsive and user-friendly interfaces.\n\nCloud & DevOps: Advanced experience with AWS (EC2, Lambda, S3, SQS, ECS, Fargate, CloudFormation, RDS, API Gateway), Docker, Kubernetes, and CI/CD pipelines.\n\nData Engineering: Hands-on with Snowflake, PostgreSQL, MongoDB, NumPy, Pandas, Spark, and Airflow for ETL pipelines and data workflows.\n\nGenerative / Agentic AI and AI Automations: Proficient in semantic search, LLM-based applications, and AI automation using tools like LangChain, LangGraph, CrewAI, HuggingFace, Ollama, n8n, and MCP. Experience with vector DBs (Qdrant, Pinecone, ChromaDB, FAISS).\n\nBlockchain: Familiar with Solidity, Truffle, Ganache, and HardHat for smart contract development and DApp prototyping.\n\nThird-Party Applications & APIs: Experienced in integrating and customizing open-source platforms such as OpenedX, Odoo, n8n, RagFlow, Taiga, and Saleor. Proficient in working with third-party APIs and services including Twilio, Mailchip and others to enhance functionality, enable automation, and support scalable application features.\n\nSkills Developed\n\nBuilt responsive, scalable web apps with optimized user experience and performance.\nIntegrated machine learning and RAG-based chatbot systems into production.\nAutomated and optimized ETL/data pipelines for high-throughput processing.\nImplemented CI/CD pipelines to improve development speed and reliability.\nApplied TDD for maintainable, robust codebases.\nLed microservice architecture design and team collaboration using agile practices.",
+  bio: "Results-driven Python Developer with 14 years of hands-on experience in architecting, developing, and deploying scalable full-stack web applications, data pipelines, and AI-powered solutions. Demonstrated expertise across backend and frontend development, cloud infrastructure, and data engineering, with a strong track record of integrating machine learning models into real-world production environments. Passionate about leveraging emerging technologies to deliver impactful, high-performance, and maintainable systems.\n\n**Core Competencies**\n\nBackend Development: Expert in Python (Django, DRF, FastAPI, Celery, Streamlit) and Node.js (Express). Skilled in RESTful APIs, microservices, event-driven systems, and message brokers (RabbitMQ).\n\nFrontend Development: Proficient in HTML5, CSS3, JavaScript, TailwindCSS, Material Design, and React for building responsive and user-friendly interfaces.\n\nCloud & DevOps: Advanced experience with AWS (EC2, Lambda, S3, SQS, ECS, Fargate, CloudFormation, RDS, API Gateway), Docker, Kubernetes, and CI/CD pipelines.\n\nData Engineering: Hands-on with Snowflake, PostgreSQL, MongoDB, NumPy, Pandas, Spark, and Airflow for ETL pipelines and data workflows.\n\nGenerative / Agentic AI and AI Automations: Proficient in semantic search, LLM-based applications, and AI automation using tools like LangChain, LangGraph, CrewAI, HuggingFace, Ollama, n8n, and MCP. Experience with vector DBs (Qdrant, Pinecone, ChromaDB, FAISS).\n\nBlockchain: Familiar with Solidity, Truffle, Ganache, and HardHat for smart contract development and DApp prototyping.\n\nThird-Party Applications & APIs: Experienced in integrating and customizing open-source platforms such as OpenedX, Odoo, n8n, RagFlow, Taiga, and Saleor. Proficient in working with third-party APIs and services including Twilio, Mailchip and others to enhance functionality, enable automation, and support scalable application features.\n\n**Skills Developed**\n\nBuilt responsive, scalable web apps with optimized user experience and performance.\nIntegrated machine learning and RAG-based chatbot systems into production.\nAutomated and optimized ETL/data pipelines for high-throughput processing.\nImplemented CI/CD pipelines to improve development speed and reliability.\nApplied TDD for maintainable, robust codebases.\nLed microservice architecture design and team collaboration using agile practices.",
 };
 
 // Skills data
@@ -64,13 +65,25 @@ export const skillCategories = [
     ],
   },
   {
-    category: "ML & Agentic AI",
+    category: "ML, Agentic AI & AI Automation",
     skills: [
       { name: "LangChain", level: "advanced" as const },
       { name: "LangGraph", level: "intermediate" as const },
       { name: "CrewAI", level: "intermediate" as const },
       { name: "HuggingFace", level: "intermediate" as const },
       { name: "VectorDB", level: "advanced" as const },
+      { name: "n8n", level: "intermediate" as const },
+      { name: "RagFlow", level: "intermediate" as const },
+    ],
+  },
+  {
+    category: "3rd Party Apps, APIs & CMS",
+    skills: [
+      { name: "OpenedX", level: "advanced" as const },
+      { name: "Twilio", level: "advanced" as const },
+      { name: "Odoo", level: "intermediate" as const },
+      { name: "Saleor", level: "intermediate" as const },
+      { name: "Taiga", level: "intermediate" as const },
     ],
   },
 ];
