@@ -7,8 +7,8 @@ import { Download } from "lucide-react";
 
 const Resume = () => {
   // Real resume PDF URL
-  const resumeUrl = "https://charlicoder.s3.us-east-1.amazonaws.com/media/new_resume_mamun_v4.pdf";
-  
+  const resumeUrl = "https://s3.eu-north-1.amazonaws.com/charlicoder.com/static/New_Simple_Resume_June_25.pdf";
+
   const handleDownload = () => {
     // Create a link and trigger download
     const link = document.createElement('a');

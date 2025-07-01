@@ -23,4 +23,3 @@ echo "🔄 Restarting Nginx..."
 sudo systemctl restart nginx
 
 echo "✅ Deployment completed successfully!"
-
