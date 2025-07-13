@@ -1,177 +1,60 @@
-
 import React from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { toast } from "@/hooks/use-toast";
 import MainNav from "@/components/NavigationMenu";
-
-const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
-  }),
-  email: z.string().email({
-    message: "Please enter a valid email address.",
-  }),
-  subject: z.string().min(5, {
-    message: "Subject must be at least 5 characters.",
-  }),
-  message: z.string().min(10, {
-    message: "Message must be at least 10 characters.",
-  }),
-});
+import { Mail, Phone, MessageCircle, UserCircle2 } from "lucide-react";
 
 const ContactPage: React.FC = () => {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    },
-  });
+    return (
+        <div className="min-h-screen bg-gray-50">
+            <header className="bg-white shadow-sm">
+                <div className="container mx-auto px-4 py-4">
+                    <MainNav />
+                </div>
+            </header>
 
-  const { formState } = form;
-  const { isSubmitting } = formState;
+            <main className="container mx-auto px-4 py-12">
+                <div className="max-w-xl mx-auto">
+                    <h1 className="text-3xl font-bold mb-8 text-center">Contact Me</h1>
 
-  const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    try {
-      // In a real application, you would send this data to your server
-      // For this example, we'll simulate a successful submission
-      
-      // Create a mailto link as a fallback approach
-      const mailtoLink = `mailto:contact@charlicoder.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`)}`;
-      
-      // Try to open the mail client
-      window.location.href = mailtoLink;
-      
-      // Show success message
-      toast({
-        title: "Message Sent",
-        description: "Your message has been sent successfully. Thank you!",
-      });
-      
-      // Reset the form
-      form.reset();
-    } catch (error) {
-      console.error("Error sending message:", error);
-      toast({
-        title: "Error",
-        description: "Failed to send your message. Please try again later.",
-        variant: "destructive",
-      });
-    }
-  };
+                    <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
+                        <div className="flex justify-center mb-6">
+                            <img
+                                src="https://s3.eu-north-1.amazonaws.com/charlicoder.com/static/mamun.jpg?auto=format&fit=crop&w=500&h=500" // Replace with your image path or external URL
+                                alt="Profile"
+                                className="w-32 h-32 rounded-full object-cover border-4 border-blue-500"
+                            />
+                        </div>
+                        <h2 className="text-2xl font-semibold mb-2">Khondoker Md Mamunur Rashid</h2>
+                        <p className="text-gray-600 mb-4">Full Stack Developer | Agentic AI & AI Automation Engineer | Blockchain Developer</p>
 
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="bg-white shadow-sm">
-        <div className="container mx-auto px-4 py-4">
-          <MainNav />
+                        <div className="space-y-4 text-left text-gray-700">
+                            <div className="flex items-center gap-3">
+                                <Mail className="text-blue-500" size={20} />
+                                <a href="mailto:contact@charlicoder.com" className="hover:underline">
+                                    contact@charlicoder.com
+                                </a>
+                            </div>
+                            <div className="flex items-center gap-3">
+                                <Phone className="text-green-600" size={20} />
+                                <a href="tel:+97451235119" className="hover:underline">
+                                    +97451235119
+                                </a>
+                            </div>
+                            <div className="flex items-center gap-3">
+                                <MessageCircle className="text-green-500" size={20} />
+                                <a href="https://wa.me/97451235119" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                                    WhatsApp: +97451235119
+                                </a>
+                            </div>
+                            <div className="flex items-center gap-3">
+                                <UserCircle2 className="text-indigo-600" size={20} />
+                                <span>Discord: charlicoder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-      </header>
-
-      <main className="container mx-auto px-4 py-8">
-        <div className="max-w-2xl mx-auto">
-          <h1 className="text-3xl font-bold mb-8">Contact Me</h1>
-          
-          <div className="bg-white p-6 rounded-lg shadow">
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Name</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Your name" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Email</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Your email" type="email" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <FormField
-                  control={form.control}
-                  name="subject"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Subject</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Message subject" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Message</FormLabel>
-                      <FormControl>
-                        <Textarea 
-                          placeholder="Your message..." 
-                          className="min-h-[150px]"
-                          {...field} 
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <Button 
-                  type="submit" 
-                  className="w-full"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? "Sending..." : "Send Message"}
-                </Button>
-              </form>
-            </Form>
-          </div>
-          
-          <div className="mt-8 text-center text-gray-600">
-            <p>You can also reach me directly via email at:</p>
-            <a href="mailto:contact@charlicoder.com" className="text-blue-600 hover:underline">
-              contact@charlicoder.com
-            </a>
-          </div>
-        </div>
-      </main>
-    </div>
-  );
+    );
 };
 
 export default ContactPage;
