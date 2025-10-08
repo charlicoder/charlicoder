@@ -66,18 +66,7 @@ export default function ContactPage() {
                 <Github className="w-8 h-8" />
                 <span className="font-medium">GitHub</span>
               </a>
-            </CardContent>
-          </Card>
 
-          {/* Book a Schedule Section */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-2xl text-center">
-                Book a 30-Minute Call
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <CalendlyEmbed />
             </CardContent>
           </Card>
         </div>

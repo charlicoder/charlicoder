@@ -148,23 +148,15 @@ export default function ServicesPage() {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      company: "TechStart Inc.",
-      text: "Charlie delivered an exceptional data pipeline that processes over 1M records daily. His expertise in Python and system architecture is outstanding.",
-      rating: 5,
+      name: "Ron Dyck",
+      company: "Savvie Inc.",
+      text: "Rashid was a great asset to our team. When thrown some very challenging problems, I found him to be very resourceful and hard working. I would highly recommend him.",
     },
     {
-      name: "Michael Chen",
-      company: "DataFlow Solutions",
-      text: "The chatbot Charlie built for us increased our customer engagement by 300%. Professional, reliable, and highly skilled.",
-      rating: 5,
-    },
-    {
-      name: "Emily Rodriguez",
-      company: "AI Innovations",
-      text: "Working with Charlie was a game-changer. He transformed our legacy system into a modern, scalable application.",
-      rating: 5,
-    },
+      name: "Iraj Islam",
+      company: "CTO and Co-Founder of NewsCred.com",
+      text: "Mamun is an intelligent, hard working and driven software engineer. During his time at NewsCred he was both a Software Engineer and a SQA Engineer. He contributed to feature development of various products and also made sure quality was maintained. We are grateful for his time at NewsCred and wish him a bright future as a successful Software Engineer."
+    }
   ]
 
   return (
@@ -194,14 +186,7 @@ export default function ServicesPage() {
                       <div>
                         <CardTitle className="text-xl text-foreground">{service.title}</CardTitle>
                         <div className="flex items-center gap-4 mt-2 text-sm text-muted-foreground">
-                          <div className="flex items-center gap-1">
-                            <DollarSign className="h-4 w-4" />
-                            {service.pricing}
-                          </div>
-                          <div className="flex items-center gap-1">
-                            <Clock className="h-4 w-4" />
-                            {service.timeline}
-                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -264,7 +249,7 @@ export default function ServicesPage() {
 
         {/* Testimonials */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">What Clients Say</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Testimonials</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
